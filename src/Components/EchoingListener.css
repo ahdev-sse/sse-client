@@ -1,0 +1,11 @@
+.EchoingListener {
+    font-size: small;
+}
+
+.EchoingListener__LatestEvent {
+    font-size: x-large;
+}
+
+.EchoingListener__History {
+    color: gray;
+}
