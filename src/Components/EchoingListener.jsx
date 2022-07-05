@@ -23,13 +23,13 @@ function EchoingListener() {
             {receivedEvents.length ? (
                 <div>
                     <div className="EchoingListener__LatestEvent">
-                        {receivedEvents[receivedEvents.length - 1].data}
+                    {receivedEvents[receivedEvents.length - 1].lastEventId}: {receivedEvents[receivedEvents.length - 1].data}
                     </div>
                     <div className="EchoingListener__History">
                     History:
                     {receivedEvents.map((event) => (
-                        <div key={event.data}>
-                            {event.data}
+                        <div key={event.lastEventId}>
+                            ID: {event.lastEventId}, Data: {event.data}
                         </div>
                     ))}
                     </div>
